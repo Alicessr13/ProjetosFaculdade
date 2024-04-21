@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    size: 0;
+    box-sizing: border-box;
+    /*content box = width trata do tamanho do conteúdo do elemento, não considerando seu padding e border*/
+    /*border-box = o tamanho agora levará em conta até a borda, ou seja, o width será a soma do conteúdo com a borda e o padding.*/
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: #d8bcfc;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top {
+    display: flex;
+    gap: 1.3rem;
+}
+
+.home {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20rem;
+    margin-top: 10rem;
+}
+
+main img {
+    height: 50rem;
+}
+
+.hometext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.hometext .titulo {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.hometext p {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.main {
+    padding: 3rem;
+}
+
+.main fieldset {
+    margin-bottom: 1.5rem;
+}
+
+.suporte {
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.inputWrapper input{
+    border: #312D64 0.1rem solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 28rem;
+    background-color: #d8bcfc;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+}
+
+.inputWrapper2{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputWrapper2 label{
+    margin-bottom: 1rem;
+}
+
+.inputWrapper2 .text{
+    border: #312D64 0.1rem solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-family: "Mulish", sans-serif;
+    width: 34rem;
+    background-color: #d8bcfc;
+    margin-bottom: 3rem;
+}
+
+form .button{
+    border: none;
+    background-color: #312D64;
+    border-radius: 1rem;
+    color: #f9f4fb;
+    padding: 1rem 1.6rem;
+    font-family: "Mulish", sans-serif;
+}
+
+form .button:hover{
+    background-color: #110f29;
+    cursor: pointer;
+}
+
+.login{
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.login .button{
+    width: 10rem;
+    margin-bottom: 3rem;
+}
+
+.container{
+    display: flex;
+}
+
+.main{
+    width: 100rem;
+}
+
+.containerGrafico {
+    width: 80rem;
+  }
+
+
+fieldset button{
+    border: none;
+    background-color: #d8bcfc;
+}
+
+fieldset input{
+    border: #312D64 0.1rem solid;
+    border-radius: 1rem;
+    padding: .5rem;
+    width: 28rem;
+    background-color: #d8bcfc;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+}
+
+fieldset #planejamentos input{
+    width: 20rem;
+} 
+
+.titulo{
+    font-size: 3.5rem;
+    font-weight: 600;
+}

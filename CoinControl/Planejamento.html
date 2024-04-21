@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Coin Control</h1>
+        <div class="top">
+            <a href="index.html">Home</a>
+            <a href="suporte.html">Suporte</a>
+            
+            <a href="conta.html">Login</a>
+            <a href="Planejamento.html">Planejamento</a>
+        </div>
+
+    </header>
+
+
+        <div class="container">
+            <div class="main">
+                <fieldset>
+                    <legend>
+                        Renda
+                    </legend>
+        
+                    <div id="rendas"></div>
+        
+                    <div id="adicionarRenda" style="display: none;">
+                        <input id="renda" type="number" placeholder="Valor da Renda">
+                        <input id="tipoRenda" type="text" placeholder="Tipo de Renda">
+                        <button onclick="adicionarRenda()">Adicionar Renda</button>
+                        <button onclick="toggle('adicionarRenda', 'mostrarRenda')">
+                            <img src="assets/icon2.png" alt="" style="width: 12px;">
+                        </button>
+                    </div>
+                    <button id="mostrarRenda" onclick="toggle('adicionarRenda', 'mostrarRenda')">
+                        <img src="assets/icon.png" alt="" style="width: 12px;">
+                    </button>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Gastos</legend>
+        
+                    <div id="gastos"></div>
+        
+                    <div id="adicionarGasto" style="display: none;">
+                        <input id="gasto" type="number" placeholder="Valor do Gasto">
+                        <input id="tipoGasto" type="text" placeholder="Tipo de Gasto">
+                        <button onclick="adicionarGasto()">Adicionar Gasto</button>
+                        <button onclick="toggle('adicionarGasto', 'mostrarGasto')">
+                            <img src="assets/icon2.png" alt="" style="width: 12px;">
+                        </button>
+                    </div>
+                    <button id="mostrarGasto" onclick="toggle('adicionarGasto', 'mostrarGasto')">
+                        <img src="assets/icon.png" alt="" style="width: 12px;">
+                    </button>
+        
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Planejamento</legend>
+        
+                    <div id="planejamentos"></div>
+        
+                    <div id="fazerPlanejamento" style="display: none;">
+                        <input id="categoria" type="text" placeholder="Categoria">
+                        <input id="porcentagem" type="number" placeholder="Porcentagem">
+                        <button onclick="fazerPlanejamento()">Fazer Planejamento</button>
+                        <button onclick="toggle('fazerPlanejamento', 'mostrarPlanejamento')">
+                            <img src="assets/icon2.png" alt="" style="width: 12px;">
+                        </button>
+                    </div>
+                    <button id="mostrarPlanejamento" onclick="toggle('fazerPlanejamento', 'mostrarPlanejamento')">
+                        <img src="assets/icon.png" alt="" style="width: 12px;">
+                    </button>
+        
+        
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Resumo</legend>
+        
+                    <div id="resultado"></div>
+        
+                </fieldset>
+            </div>
+
+            <div class="containerGrafico">
+                <p class="titulo">Grafico</p>
+                <canvas id="meuGrafico"></canvas>
+            </div>
+            
+        </div>
+        
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    
+    
+    
+</body>
+
+</html>
